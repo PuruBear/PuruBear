@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PURU-BEAR</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">𝕻𝖀𝕽𝖀 𝕭𝕰𝕬𝕽</h1>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="md:hidden text-blue-600 focus:outline-none text-2xl">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white shadow-md">
+      <ul class="flex flex-col space-y-3 px-6 py-4">
+        <li><a href="#home" class="hover:text-blue-600 block">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-600 block">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-600 block">Project</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 block">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Hallo, I'm <span class="text-blue-600">𝕻𝖀𝕽𝖀 𝕭𝕰𝕬𝕽</span></h2>
+    <p class="text-base md:text-lg text-gray-600 mb-6">Information wants to be free.</p>
+    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">View Leaks & Projects</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-24 px-6 text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-6">About Me</h3>
+    <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+      I’m nobody special — just a ghost on the internet.  
+    I build, break, and fix things when the world’s asleep.  
+    I don’t chase clout, I chase silence.
+    I hate anything that hurts people or messes with peace.  
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-white py-24 px-6" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-12">Leaks & Projects</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Project 1 -->
+        <div class="bg-gray-100 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="zoom-in">
+          <img src="img/1.png" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold mb-2">disdukcapil.go.id</h4>
+            <p class="text-gray-600 mb-4 text-sm md:text-base">We grabbed the population data from that weak site.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:underline">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-gray-100 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="zoom-in">
+          <img src="img/2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold mb-2">bekasikab.go.id</h4>
+            <p class="text-gray-600 mb-4 text-sm md:text-base">The admin took it too lightly, so that the population data was spread who knows where.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:underline">Lihat Detail</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-gray-100 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition" data-aos="zoom-in">
+          <img src="img/3.png" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="text-xl font-semibold mb-2">smkn6kotabekasi.sch.id</h4>
+            <p class="text-gray-600 mb-4 text-sm md:text-base">This website is too vulnerable, and the admin doesn't care about this vulnerability.</p>
+            <a href="#" class="text-blue-600 font-semibold hover:underline">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 text-center bg-gray-50 px-6" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+    <p class="text-gray-600 mb-4 text-base md:text-lg">Telegram: <a href="https://t.me/PuruBear" class="text-blue-600 hover:underline">PuruBear</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center shadow-inner">
+    <p class="text-gray-600 text-sm">&copy; 2025 𝕻𝖀𝕽𝖀 𝕭𝕰𝕬𝕽. All rights reserved.</p>
+  </footer>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Toggle Mobile Menu
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
